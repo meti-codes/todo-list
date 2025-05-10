@@ -1,0 +1,195 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.app-header {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    animation: fadeIn .5s ease;
+}
+
+.app-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+    color: #1f1f1f;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    animation: fadeDown 1s ease-out;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ul {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    width: 70%;
+    margin: 10px auto; /* centers it horizontally */
+    background: #eee;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 0.75em 1.5em;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #5f72bd, #9b23ea);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+
+input#text {
+    padding: 0.75em 1.25em;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(white, white), linear-gradient(135deg, #667eea, #764ba2);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.15);
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input#text:focus {
+    box-shadow: 0 12px 24px rgba(102, 126, 234, 0.3);
+    border-color: transparent;
+}
+
+.delete-btn{
+    padding: 0.35em 0.6em;
+    background: linear-gradient(135deg, #ff6b6b, #ff4757);
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 71, 87, 0.3);
+    transition: all 0.3s ease;
+    font-family: 'Segoe UI', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.delete-btn:hover {
+    background: linear-gradient(135deg, #ff3b3b, #e84118);
+    color: white;
+    box-shadow: 0 8px 24px rgba(255, 71, 87, 0.4);
+    transform: translateY(-2px);
+}
+
+.delete-btn:active {
+    color: white;
+    transform: scale(0.97);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.6;
+}
+
+li, button {
+    cursor: pointer;
+}
+
+
+/* animations */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 500px) {
+    .app-title {
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 0.9rem;
+    }
+}
+
+
