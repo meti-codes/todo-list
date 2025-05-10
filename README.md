@@ -10,7 +10,8 @@ A clean, responsive, and user-friendly To-Do List web app built with **HTML**, *
 - ✅ Minimal, modern design using custom fonts and subtle animations
 
 ## 🌈 Demo
-**🔗 [Live Website](https://meti-codes.github.io/todo-list/)**
+<a href="https://meti-codes.github.io/todo-list/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+
 
 ## 🧠 What I Learned
 - DOM manipulation and event delegation
